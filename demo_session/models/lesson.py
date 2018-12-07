@@ -6,7 +6,7 @@ import datetime
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DATE_FORMAT
 
 class TrainingLesson(models.Model):
-    _name = 'pscloud.training.lesson'
+    _name = 'yangshan609.train.lesson'
     _description = "课程信息"
 
     name = fields.Char(string='Name')
