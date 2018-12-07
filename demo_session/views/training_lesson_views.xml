@@ -3,7 +3,7 @@
     <data>
 
         <record model="ir.ui.view" id="view_training_lesson_calendar">
-            <field name="model">pscloud.training.lesson</field>
+            <field name="model">yangshan609.train.lesson</field>
             <field name="priority" eval="2"/>
             <field name="arch" type="xml">
                 <calendar string="课程日期" date_start="start_date" date_stop="end_date" color="teacher_id">
@@ -15,7 +15,7 @@
         </record>
 
         <record model="ir.ui.view" id="view_training_lesson_graph">
-            <field name="model">pscloud.training.lesson</field>
+            <field name="model">yangshan609.train.lesson</field>
             <field name="arch" type="xml">
                 <graph string="课程">
                     <field name="start_date" type="row"/>
@@ -26,7 +26,7 @@
         </record>
 
         <record id="view_training_lesson_pivot" model="ir.ui.view">
-            <field name="model">pscloud.training.lesson</field>
+            <field name="model">yangshan609.train.lesson</field>
             <field name="arch" type="xml">
                 <pivot string="课程分析" disable_linking="True">
                     <field name="name" type="row"/>
@@ -36,8 +36,8 @@
         </record>
 
         <record id="view_training_lesson_tree" model="ir.ui.view">
-            <field name="name">pscloud.training.lesson.tree</field>
-            <field name="model">pscloud.training.lesson</field>
+            <field name="name">yangshan609.train.lesson.tree</field>
+            <field name="model">yangshan609.train.lesson</field>
             <field name="arch" type="xml">
                 <tree string="课程列表">
                     <field name="name"/>
@@ -52,8 +52,8 @@
         </record>
 
         <record id="view_training_lesson_form" model="ir.ui.view">
-            <field name="name">pscloud.training.lesson.form</field>
-            <field name="model">pscloud.training.lesson</field>
+            <field name="name">yangshan609.train.lesson.form</field>
+            <field name="model">yangshan609.train.lesson</field>
             <field name="arch" type="xml">
                 <form string="课程">
                     <header>
@@ -93,7 +93,7 @@
         <record id="action_training_lesson" model="ir.actions.act_window">
             <field name="name">课程</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">pscloud.training.lesson</field>
+            <field name="res_model">yangshan609.train.lesson</field>
             <field name="view_type">form</field>
             <field name="view_id" ref="view_training_lesson_tree"/>
             <field name="view_mode">tree,form,calendar,graph,pivot</field>
